@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/footer_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="false"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+
+    <!-- SEPARADOR -->
+
+    <include layout="@layout/separador_horizontal" />
+    <!-- FIN SEPARADOR -->    
+
+		 <RelativeLayout
+		     android:id="@+id/footer"
+		     android:layout_width="fill_parent"
+		     android:layout_height="25dp"
+		     android:layout_alignParentBottom="true"		   
+		     android:layout_marginBottom="40dp"		   
+		     android:layout_marginRight="40dp"
+		     android:background="#000"
+		     android:gravity="right" 
+		     android:focusable="false">
+ 	        
+		    <LinearLayout android:layout_width="wrap_content"
+       	 		android:layout_height="wrap_content"           
+            	android:orientation="horizontal"
+            	 android:focusable="false">
+                 <TextView android:id="@+id/barra_amarilla"
+	              	android:gravity="bottom"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:paddingLeft="5dp"              
+	                android:text="@string/amarillo"
+	                android:textColor="@color/texto_sin_foco"
+                    android:textSize="@dimen/footer_header_text_size"
+                    android:textStyle="bold"
+	                android:drawableLeft="@drawable/bar_widget_amarilla"
+	                android:drawablePadding="5dp"
+	                 android:focusable="false"/>	 
+	                 <ImageView android:id="@+id/volver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:contentDescription="@string/blank"
+                    android:focusable="false"
+                    android:src="@drawable/bot_volve" />
+	                  
+                 
+                 	     
+                
+            </LinearLayout>
+		     
+ 	        </RelativeLayout>
+
+</LinearLayout>

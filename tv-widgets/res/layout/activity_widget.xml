@@ -1,0 +1,185 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+
+    <ImageView
+        android:id="@+id/imageViewLogoMagicBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/background_semitransparent"
+        android:src="@drawable/log_marca_barra" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true">
+        
+	    <RelativeLayout
+	        android:id="@+id/menu"
+	        android:layout_width="800dp"
+	        android:layout_height="120dp"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentLeft="true"
+	        android:layout_toLeftOf="@+id/imageViewLogoFiWare"
+	        android:background="@drawable/bg_barra"
+	        android:focusable="false" >
+
+	        <!-- Control camara 1  -->
+	        <LinearLayout
+	            android:id="@+id/cam1"
+	            android:layout_width="150dp"
+	            android:layout_height="200dp"
+	            android:layout_centerVertical="true"
+	            android:layout_marginBottom="10dp"
+	            android:layout_marginLeft="20dp"
+	            android:layout_marginTop="10dp"
+	            android:background="@color/background_cameras"
+	            android:orientation="vertical" >
+	            <TextView
+	                android:id="@+id/textViewCam1"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="3dp"
+	                android:gravity="center"
+	                android:text="Zona 1"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	            <ImageButton
+	                android:id="@+id/buttonCam1"
+	                android:layout_width="120dp"
+	                android:layout_height="60dp"
+	                android:layout_marginLeft="15dp"
+	                android:layout_marginTop="3dp"
+	                android:src="@drawable/green_light"
+	                android:text="Mostrar" />
+	        </LinearLayout>
+	        	        
+	        <!-- Control camara 2  -->
+	        <LinearLayout
+	            android:id="@+id/cam2"
+	            android:layout_width="150dp"
+	            android:layout_height="200dp"
+	            android:layout_centerVertical="true"
+	            android:layout_marginBottom="10dp"
+	            android:layout_marginLeft="20dp"
+	            android:layout_toRightOf="@+id/cam1"
+	            android:layout_marginTop="10dp"
+	            android:background="@color/background_cameras"
+	            android:orientation="vertical" >
+	            <TextView
+	                android:id="@+id/textViewCam2"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="3dp"
+	                android:gravity="center"
+	                android:text="Zona 2"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	            <ImageButton
+	                android:id="@+id/buttonCam2"
+	                android:layout_width="120dp"
+	                android:layout_height="60dp"
+	                android:layout_marginLeft="15dp"
+	                android:layout_marginTop="3dp"
+	                android:src="@drawable/green_light"
+	                android:text="Mostrar" />
+	        </LinearLayout>
+
+	        <!-- Control camara 3  -->
+	        <LinearLayout
+	            android:id="@+id/cam3"
+	            android:layout_width="150dp"
+	            android:layout_height="200dp"
+	            android:layout_centerVertical="true"
+	            android:layout_marginBottom="10dp"
+	            android:layout_marginLeft="20dp"
+	            android:layout_toRightOf="@+id/cam2"
+	            android:layout_marginTop="10dp"
+	            android:background="@color/background_cameras"
+	            android:orientation="vertical" >
+	            <TextView
+	                android:id="@+id/textViewCam3"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="3dp"
+	                android:gravity="center"
+	                android:text="Zona 3"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	            <ImageButton
+	                android:id="@+id/buttonCam3"
+	                android:layout_width="120dp"
+	                android:layout_height="60dp"
+	                android:layout_marginLeft="15dp"
+	                android:layout_marginTop="3dp"
+	                android:src="@drawable/green_light"
+	                android:text="Mostrar" />
+	        </LinearLayout>
+	       
+	        <!-- Control camara 4  -->
+	        <LinearLayout
+	            android:id="@+id/cam4"
+	            android:layout_width="150dp"
+	            android:layout_height="200dp"
+	            android:layout_centerVertical="true"
+	            android:layout_marginBottom="10dp"
+	            android:layout_marginLeft="20dp"
+	            android:layout_toRightOf="@+id/cam3"
+	            android:layout_marginTop="10dp"
+	            android:background="@color/background_cameras"
+	            android:orientation="vertical" >
+	            <TextView
+	                android:id="@+id/textViewCam4"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="3dp"
+	                android:gravity="center"
+	                android:text="Zona 4"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	            <ImageButton
+	                android:id="@+id/buttonCam4"
+	                android:layout_width="120dp"
+	                android:layout_height="60dp"
+	                android:layout_marginLeft="15dp"
+	                android:layout_marginTop="3dp"
+	                android:src="@drawable/green_light"
+	                android:text="Mostrar" />
+	        </LinearLayout>	        
+	        
+	        
+	    </RelativeLayout>
+       
+        <ImageView
+            android:id="@+id/imageViewVitamio"
+            android:layout_width="568dp"
+            android:layout_height="320dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/gif1" />
+
+	    <ImageView
+	        android:id="@+id/imageViewLogoFiWare"
+	        android:layout_width="568dp"
+	        android:layout_height="100dp"
+	        android:layout_alignParentRight="true"
+			android:layout_marginBottom="500dp"
+			android:layout_alignTop="@+id/imageViewVitamio"		
+	        android:background="@color/background_dark"
+	        android:src="@drawable/logo_fiware" />
+        	    
+    </RelativeLayout>
+
+    
+</RelativeLayout>

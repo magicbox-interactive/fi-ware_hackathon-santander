@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, WidgetsPortalActivity!</string>
+    <string name="app_name">Widgets_fi-ware</string>
+    <string name="azul">Volver</string>
+    <string name="amarillo">Cambiar vista</string>
+    <string name="icono">icono</string>
+    <string name="blank"></string>
+    <string name="error_conexion">Error de conexión. Por favor verifique su conexión a internet y vuelva a intentarlo.</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="title_activity_widget">Widget</string>
+    <string name="action_settings">Settings</string>
+</resources>

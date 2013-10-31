@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/head_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:orientation="vertical"
+	android:focusable="false">
+
+  
+        <LinearLayout
+            android:id="@+id/cabecera_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="right"
+            android:orientation="horizontal" 
+            android:focusable="false">
+
+          
+            <TextView
+                android:id="@+id/fecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text=""
+                android:textColor="@color/texto_sin_foco"
+                android:textSize="@dimen/footer_header_text_size" 
+                android:focusable="false"/>
+
+            <TextView
+                android:id="@+id/hora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingRight="40dp"
+                android:text=""
+                android:textColor="@color/texto_sin_foco"
+                android:textSize="@dimen/footer_header_text_size"
+                android:focusable="false" />
+        </LinearLayout>
+   
+    <!-- SEPARADOR -->
+    <!-- FIN SEPARADOR -->
+
+    <include layout="@layout/separador_horizontal" />
+
+</LinearLayout>

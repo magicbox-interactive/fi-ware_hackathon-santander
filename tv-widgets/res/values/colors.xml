@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="texto_foco">#65cc03</color>
+    <color name="borde_foco">#65cc03</color>
+    <color name="texto_sin_foco">#ececec</color>
+    <color name="texto_titulo">#669acc</color>
+    <color name="titulo_fila">#6699CC</color>
+    <color name="background">#000000</color>
+    <color name="load_distractor">#44cccccc</color>
+    <color name="separador">#cccccc</color>
+    <color name="fondo_login">#f1000000</color>
+    <color name="destacado_ultima_hora">#da221d</color>
+    <color name="sub_menu_color">#cc000000</color>
+     <color name="titulo_feed_mundo">#5089b0</color>
+    <color name="titulo_feed_marca">#c72e2e</color> 
+    <color name="titulo_feed_expansion">#5089b0</color>
+    <color name="titulo_feed_telva">#c40936</color>
+    <color name="background_semitransparent">#AAFFFFFF</color>
+    <color name="background_cameras">#66FFFFFF</color>
+    <color name="background_dark">#99000000</color>
+     
+</resources>

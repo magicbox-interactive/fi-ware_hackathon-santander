@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="es.magicbox.hackathon.widgets"
+    android:versionCode="1"
+    android:versionName="1.00" >
+
+    <uses-sdk android:minSdkVersion="10" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+
+    <application
+        android:name="es.magicbox.hackathon.widgets.CommonApp"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name="es.magicbox.hackathon.widgets.WidgetsPortalActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="es.magicbox.hackathon.widgets.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="es.magicbox.hackathon.widgets.WidgetVistas"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="es.magicbox.hackathon.widgets.WidgetSecurity"
+            android:label="@string/title_activity_widget" 
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <service android:name="es.magicbox.hackathon.services.WebAPIService"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,18 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="plantilla">
+        <item name="android:textColor">@color/texto_sin_foco</item>
+    </style>
+
+    
+    <style name="plantilla.texto_boton">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/texto_sin_foco</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+    
+        
+    
+
+</resources>

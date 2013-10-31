@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- Ventana de video -->
+
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Overlay -->
+
+    <RelativeLayout
+        android:id="@+id/widget"
+        android:layout_width="335dp"
+        android:layout_height="542dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/bg_widget_pestana" >
+
+        <!-- WEB VIEW IZQUIERDO -->
+
+        <LinearLayout
+            android:id="@+id/left_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_widget_pestana"
+            android:focusable="false"
+            android:gravity="left"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/icon_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginBottom="14dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="28dp"
+                android:contentDescription="@string/icono"
+                android:src="@drawable/log_widget_pestana_elmundo" >
+            </ImageView>
+
+            <WebView
+                android:id="@+id/webview_overlay"
+                android:layout_width="fill_parent"
+                android:layout_height="400dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:background="@android:color/transparent"
+                android:scrollbars="none" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="14dp"
+                android:orientation="horizontal" >
+
+                <TextView android:id="@+id/barra_amarilla"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/bar_widget_amarilla"
+                    android:drawablePadding="5dp"
+                    android:gravity="bottom"
+                    android:paddingLeft="5dp"
+                    android:text="@string/amarillo"
+                    android:textColor="@color/texto_sin_foco"
+                    android:textSize="@dimen/footer_header_text_size"
+                    android:textStyle="bold" />
+
+                <ImageView android:id="@+id/volver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:contentDescription="@string/blank"
+                    android:focusable="false"
+                    android:src="@drawable/bot_volve" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- FIN WEB VIEW IZQUIERDO -->
+
+    </RelativeLayout>
+
+</RelativeLayout>

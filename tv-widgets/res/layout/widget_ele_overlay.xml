@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+     android:focusable="false">
+
+      <include layout="@layout/header"
+          android:id="@+id/cabecera" 
+          android:layout_alignParentTop="true"/>
+
+
+	   <RelativeLayout
+ 	        android:id="@+id/widget"
+ 	        android:layout_width="266dp"
+ 	        android:layout_height="fill_parent"
+ 	        android:layout_below="@id/cabecera"
+ 	        android:layout_alignParentLeft="true"
+ 	        android:layout_alignParentBottom="true"
+ 	        android:layout_marginLeft="40dp"
+ 	        android:layout_marginBottom="40dp"
+ 	        android:background="#000"
+ 	        android:focusable="false"
+ 	        android:visibility="visible" >
+        
+       <!-- WEB VIEW IZQUIERDO -->
+
+        <LinearLayout
+            android:id="@+id/left_menu"
+            android:background="#000"
+            android:layout_width="266dp"
+            android:layout_height="fill_parent"          
+            android:focusable="false"
+            android:gravity="left"
+            android:orientation="vertical" >
+
+            
+            <ImageView android:id="@+id/icon_tab"
+                android:layout_gravity="left"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="3dp"
+                android:background="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/icono"
+                android:src="@drawable/log_widget_elmundo"
+                android:focusable="false"/>
+            
+            <WebView
+                android:id="@+id/webview_izquierdo"
+                android:layout_width="260dp"
+                android:layout_height="560dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="3dp"
+                android:background="@android:color/transparent"
+                android:scrollbars="none" 
+                android:focusable="true"/>
+        </LinearLayout>
+        <!-- FIN WEB VIEW IZQUIERDO -->
+         
+        </RelativeLayout>
+        
+	     <!-- SEPARADOR -->
+	     <View android:layout_width="1dp" 
+		    android:layout_height="fill_parent" 
+		    android:background="@color/separador"
+		    android:layout_alignRight="@id/widget"
+			android:layout_below="@id/cabecera"	
+		    android:layout_marginBottom="40dp"
+		     android:focusable="false"/>
+	     <!-- FIN SEPARADOR -->
+	     
+	      <RelativeLayout
+        android:id="@+id/widget2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@layout/footer"
+        android:layout_alignBottom="@id/widget"
+        android:layout_marginRight="40dp"
+        android:layout_toRightOf="@id/widget"
+        android:background="#000"
+        android:focusable="false"
+        android:visibility="visible" >
+        
+         <!-- CONTAINER ZONA INFERIOR: WEBVIEW_CENTRO -->
+          
+       		 <LinearLayout
+                android:id="@+id/down_main_menu"
+                android:layout_width="fill_parent"
+                android:layout_height="146dp"
+                android:background="#000"
+                android:focusable="false"
+                android:gravity="left"
+                android:orientation="horizontal" >
+
+       		     <WebView
+       		         android:id="@+id/webview_centro"
+       		         android:layout_width="match_parent"
+       		         android:layout_height="142dp"       		         
+       		         android:scrollbars="none" 
+       		         android:focusable="true"/>
+       		     
+
+            </LinearLayout>
+        
+        <!-- FIN CONTAINER ZONA INFERIOR: WEBVIEW_CENTRO -->
+        
+        </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/widget3"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/widget2"
+        android:layout_below="@id/cabecera"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:background="#000"
+        android:focusable="false"
+        android:visibility="visible" >
+        
+          <!-- WEB VIEW DERECHO -->
+         
+       		 <LinearLayout               
+                android:layout_width="126dp"
+                android:layout_height="470dp"
+                android:background="#000"
+                android:focusable="false"
+                android:gravity="left"
+                android:orientation="horizontal" >
+
+
+       		     <WebView
+       		         android:id="@+id/webview_derecho"
+       		         android:layout_width="120dp"
+       		         android:layout_height="460dp"
+       		         android:layout_marginTop="5dp"
+       		         android:layout_marginBottom="3dp"
+       		         android:layout_marginLeft="3dp"
+       		         android:layout_marginRight="40dp"
+       		         android:focusable="true"
+       		         android:background="@android:color/transparent"
+       		         android:scrollbars="none" />
+
+            </LinearLayout>
+        
+         <!-- FIN WEB VIEW DERECHO -->
+        
+        </RelativeLayout>
+        
+    
+     <!-- Ventana de video -->
+    <VideoView android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/cabecera"
+        android:layout_toLeftOf="@id/widget3"
+        android:layout_toRightOf="@id/widget"
+        android:layout_above="@id/widget2"
+        android:focusable="false"/>
+    
+     
+    <include layout="@layout/footer" android:layout_alignParentBottom="true"/>
+</RelativeLayout>
