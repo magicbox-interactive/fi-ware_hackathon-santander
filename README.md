@@ -18,9 +18,9 @@ on TV in two ways:
    FI-WARE could infrastructure) The TV renders the external web-page as
    an overlay widget. (server-side folder)
 
-  - the second approach implements a native client on Android for the
-    FI-WARE platform and renders the information as native Android
-    components as a widgets over the TV signal. (tv-widget folder)
+ - the second approach implements a native client on Android for the
+   FI-WARE platform and renders the information as native Android
+   components as a widgets over the TV signal. (tv-widget folder)
 
 The demonstrator don't just test the FI-WARE platform as a data
 provider, also use the FI-WARE platform to send signals to a IR
